@@ -12,7 +12,7 @@
 5. Metody numeryczne w obliczeniach inżynierskich
 6. Cyfrowe przetwarzanie obrazów i sygnałów
 7. Architektura mikrokontrolerów
-8. Systemy operacyjne – przegląd, struktury i zadania
+8. [Systemy operacyjne – przegląd, struktury i zadania](general-questions/systemy-operacyjne/README.md)
 9. Zasady projektowania algorytmów
 10. Sieci komputerowe – przegląd, struktury i zastosowania
 
