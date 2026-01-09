@@ -9,10 +9,10 @@
 1. Opisy obiektów dynamicznych, sterowanie adaptacyjne i wielopoziomowe
 2. [Zaawansowane struktury danych i algorytmy ich obsługi](general-questions/struktury-danych/README.md)
 3. Algorytmy optymalizacji i ich zastosowania
-4. Zastosowanie sztucznej inteligencji i metod uczenia maszynowego w robotach inteligentnych
+4. [Zastosowanie sztucznej inteligencji i metod uczenia maszynowego w robotach inteligentnych](general-questions/zastosowanie-AI-i-ML-w-robotach-inteligentnych/README.md)
 5. Metody numeryczne w obliczeniach inżynierskich
 6. Cyfrowe przetwarzanie obrazów i sygnałów
-7. Architektura mikrokontrolerów
+7. [Architektura mikrokontrolerów](general-questions/architektura-mikrokontrolerow/README.md)
 8. [Systemy operacyjne – przegląd, struktury i zadania](general-questions/systemy-operacyjne/README.md)
 9. [Zasady projektowania algorytmów](general-questions/projektowanie-i-analiza-algorytmow/README.md)
 10. Sieci komputerowe – przegląd, struktury i zastosowania
