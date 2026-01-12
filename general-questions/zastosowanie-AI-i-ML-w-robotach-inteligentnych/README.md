@@ -9,7 +9,7 @@
 
 ## 2. Siedem Obszarów AI w Robotyce
 Zastosowanie AI w robotach obejmuje siedem kluczowych sfer:
-1.  **Reprezentacja wiedzy:** Sposób kodyfikacji informacji o robocie i jego otoczeniu.
+1.  **Reprezentacja wiedzy:** Sposób kodyfikacji informacji o robocie i jego otoczeniu. Robot pozyskuje dzięki AI wiedzę ogólną. Buduję bazę faktów, programista nie musi wpisywać ręcznie reguł, że np. robot przynosząc mleko dzięki temu wie, że to żywność przechowywana w lodówce -> wie gdzie po nie iść.
 2.  **Rozumienie języka naturalnego (NLP):** Komunikacja z maszyną i rozumienie kontekstu poleceń.
 3.  **Uczenie się (Learning):** Nabywanie nowej wiedzy i wykrywanie wzorców w danych.
 4.  **Planowanie działań:** Wyznaczanie ścieżek do celu i ich aktualizacja w razie problemów.
@@ -27,7 +27,7 @@ Uczenie robotów to dziś najczęściej połączenie sterowania adaptacyjnego z 
     *    Uczeie częściowo nadzorowane ( mała ilość danych oznaczonych (np. etykietami), duża ilość danych bez etykiet.  
 
 *   **Uczenie przez wzmacnianie (RL):** Robot (agent) uczy się poprzez interakcję ze środowiskiem, dążąc do maksymalizacji nagrody.
-    *   **Przykłady:** Mistrz szachowy podejmujący decyzje intuicyjne, robot odkurzający decydujący o powrocie do bazy na podstawie stanu baterii i doświadczeń z przeszłości. Przykład algorytmu Q-learning, Q==quality, przy wykonaniu ruchu algorytm dostaję nagrodę lub karę.
+    *   **Przykłady:** Mistrz szachowy podejmujący decyzje intuicyjne, robot odkurzający decydujący o powrocie do bazy na podstawie stanu baterii i doświadczeń z przeszłości. Przykład algorytmu Q-learning, Q==quality, przy wykonaniu ruchu algorytm dostaje nagrodę lub karę.
 *   **Uczenie Federacyjne (Federated Learning):** Wiele robotów współdzieli wiedzę, co pozwala na szybszą naukę (np. 5 robotów po 20 prób zamiast jednego robota wykonującego 100 prób).
 *   **Deep Learning:** Coraz częściej wkorzystywany do tzw. prymitywów ruchu, np. nauki chwytania nieznanych przedmiotów.
 
