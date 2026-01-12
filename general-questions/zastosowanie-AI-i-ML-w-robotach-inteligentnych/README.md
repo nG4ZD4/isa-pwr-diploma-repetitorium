@@ -21,23 +21,32 @@ Zastosowanie AI w robotach obejmuje siedem kluczowych sfer:
 Uczenie robotów to dziś najczęściej połączenie sterowania adaptacyjnego z uczeniem przez wzmacnianie.
 
 *   **Przykłady uczenia maszynowego:**
-    *    Uczenie nadzorowane
-    *    Uczenie nienadzorowane
+    *    Uczenie nadzorowane (uczenie z danymi (dataset), z ingerecją człowieka, oczekiwane wyjście)
+    *    Uczenie nienadzorowane (uczenie bez danych, brak oczekiwanego wyjścia, bez ingerncji człowieka)
     *    Uczenie przez wzmacnianie
+    *    Uczeie częściowo nadzorowane ( mała ilość danych oznaczonych (np. etykietami), duża ilość danych bez etykiet.  
 
 *   **Uczenie przez wzmacnianie (RL):** Robot (agent) uczy się poprzez interakcję ze środowiskiem, dążąc do maksymalizacji nagrody.
-    *   **Przykłady:** Mistrz szachowy podejmujący decyzje intuicyjne, robot odkurzający decydujący o powrocie do bazy na podstawie stanu baterii i doświadczeń z przeszłości.
+    *   **Przykłady:** Mistrz szachowy podejmujący decyzje intuicyjne, robot odkurzający decydujący o powrocie do bazy na podstawie stanu baterii i doświadczeń z przeszłości. Przykład algorytmu Q-learning, Q==quality, przy wykonaniu ruchu algorytm dostaję nagrodę lub karę.
 *   **Uczenie Federacyjne (Federated Learning):** Wiele robotów współdzieli wiedzę, co pozwala na szybszą naukę (np. 5 robotów po 20 prób zamiast jednego robota wykonującego 100 prób).
 *   **Deep Learning:** Coraz częściej wkorzystywany do tzw. prymitywów ruchu, np. nauki chwytania nieznanych przedmiotów.
 
 ## 4. Percepcja i Widzenie Maszynowe
 Systemy wizyjne są kluczowe dla inteligentnej interakcji robota z otoczeniem.
 
-*   **Zadania systemów wizyjnych:** Rozpoznawanie obiektów, wyznaczanie ich położenia, detekcja podłoża, unikanie przeszkód oraz odczytywanie ludzkich intencji (HMI).
+*   **Nowe definicje:**
+    *   **Deep learning:** Podzbiór uczenia maszynowego, głębokie sieci neuronowe posiadają strukturę warstwową. Warstwa wejściowa, warstwa/y ukryte, gdzie są przetwarzane dane oraz warstwa wyjściowowa. Przykłady DL to CNN (sieci konwolucyjne), sieci warstwowe czy sieci rekurencyjne
+    *   **Bardzo uproszczone definicje:**
+       *   **Sieci konwolucyjne (CNN):** Stosowane do analizy obrazu (klasyfikacja lub detekcja). Filtry w warstwach ukrytych szukają cech (najpierw słabsze cechy np. krawędzie, im dalej tym wiecej np. patterny czy całe obiekty). 
+       *   **Sieci wielowarstwowe (MLP):** Stosowane głównie do danych tabelarycznych (prosta klasyfikacja lub przewidywanie wartości). Informacja przepływa tylko w jedną stronę ("każdy z każdym"), gdzie kolejne warstwy uczą się łączyć proste dane wejściowe w bardziej złożone zależności.
+       *   **Sieci rekurencyjne (RNN):** Stosowane do danych sekwencyjnych, ułożonych w czasie (analiza tekstu, mowy, giełda). Posiadają wewnętrzną "pamięć" (pętlę), dzięki której interpretacja aktualnego słowa lub wartości zależy od tego, co pojawiło się wcześniej.
+      
+
+*   **Zadania systemów wizyjnych:** Detekcja obiektów, wyznaczanie ich położenia, detekcja podłoża, unikanie przeszkód, klasyfikacja, segmentacja semantyczna (przypisanie każdego piksela do jakiejś kategorii) oraz odczytywanie ludzkich intencji (HMI).
 *   **Zaawansowane algorytmy:**
     *   **OpenPose:** Detekcja postury człowieka przy użyciu sieci neuronowych.
-    *   **Object Detection:** Wykrywanie i nazywanie obiektów (osoby, samochody, znaki).
-*   **Fuzja sensoryczna:** Łączenie danych z różnych czujników (np. wizja, LIDAR, IMU) w celu uzyskania dokładniejszego obrazu rzeczywistości.
+    *   **Object Detection (np. YOLO):** Wykrywanie i nazywanie obiektów (osoby, samochody, znaki).
+*   **Fuzja sensoryczna:** Łączenie danych z różnych czujników (np. wizja, LIDAR, IMU (Inertial Measurement Unit: żyroskop, akcelerometr)) w celu uzyskania dokładniejszego obrazu rzeczywistości.
 
 ## 5. Nawigacja i SLAM
 Inteligentne roboty mobilne muszą potrafić poruszać się w nieznanym środowisku.
@@ -60,5 +69,5 @@ Współczesna robotyka zmierza w stronę inteligentnych ekosystemów.
 *   **Systemy wielorobotowe (MRS):** Grupy robotów współpracujących nad wspólnym celem (np. roje robotów), co podnosi odporność na błędy i efektywność pracy.
 
 ---
-**Metofora dla zrozumienia:**
-Wyobraź sobie różnicę między **pociągiem** a **kurierem na rowerze**. Pociąg (tradycyjny robot/AGV) jedzie tylko po szynach i staje, gdy widzi przeszkodę. Kurier (robot inteligentny/AMR) ma mapę w głowie, widzi ruch uliczny (percepcja), potrafi zmienić trasę, gdy ulica jest zamknięta (podejmowanie decyzji) i uczy się z każdym dniem, które skróty są najszybsze (ML).
+## 8. Podsumowanie
+Na ogół pytanie w śmieszny sposób sformułowane. Treść zrobiona na podstawie prezentacji z wykładów. 
