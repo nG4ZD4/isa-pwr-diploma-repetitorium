@@ -2,11 +2,11 @@
 
 > Materials collected and created by ISA 2022-2026 bachelor's degree.
 
-## Pytania na egzamin dyplomowy - [źródło](https://wit.pwr.edu.pl/fcp/sGBUKOQtTKlQhbx08SlkTUg1CUWRuHQwFDBoIVURNWH5aAFhnRlUuWTISTnoYDxMe/190/public/studenci/dyplomowanie/pytania_egzamin/i_stopien/2022/informatyczne_systemy_automatyki_2022_2023.pdf)
+## Pytania na egzamin dyplomowy styczeń/luty 2026 - [źródło](https://wit.pwr.edu.pl/fcp/sGBUKOQtTKlQhbx08SlkTUg1CUWRuHQwFDBoIVURNWH5aAFhnRlUuWTISTnoYDxMe/190/public/studenci/dyplomowanie/pytania_egzamin/i_stopien/2022/informatyczne_systemy_automatyki_2022_2023.pdf)
 
 ### Pytania ogólnokierunkowe
 
-1. Opisy obiektów dynamicznych, sterowanie adaptacyjne i wielopoziomowe
+1. [Opisy obiektów dynamicznych, sterowanie adaptacyjne i wielopoziomowe](general-questions/opisy-obiektów-dynamicznych,-sterowanie-adaptacyjne-i-wielopoziomowe/README.md)
 2. [Zaawansowane struktury danych i algorytmy ich obsługi](general-questions/struktury-danych/README.md)
 3. Algorytmy optymalizacji i ich zastosowania
 4. [Zastosowanie sztucznej inteligencji i metod uczenia maszynowego w robotach inteligentnych](general-questions/zastosowanie-AI-i-ML-w-robotach-inteligentnych/README.md)

@@ -21,7 +21,7 @@ Obiekt dynamiczny
 
 
 *Poniżej przykładowa (real szit badanie) odpowiedź skokowa obiektu dynamicznego cieplnego*
-<img width="1200" height="500" alt="skok_zoom" src="https://github.com/user-attachments/assets/d431bb58-6d88-4318-9b18-f9ca2b30b5fa" />
+<img width="1200" height="500" alt="skok_zoom" src="max1.png" />
 
 ## 1.1 Klasyfikacja obiektów dynamicznych
 
@@ -42,10 +42,10 @@ Obiekt dynamiczny
 Obiekt (uklad) jest **liniowy**, jezeli spelnia **zasade superpozycji**, ktora sklada sie z dwoch wlasnosci:
 1. **skalowalnosc (jednorodnosc)**
    
-   <img width="196" height="35" alt="Zrzut ekranu 2026-01-12 202735" src="https://github.com/user-attachments/assets/0a9524ac-ba47-4d0c-be8c-ebed2788cce5" />
+   <img width="196" height="35" alt="Zrzut ekranu 2026-01-12 202735" src="max2.png" />
 3. **sumowanie sygnalow (addytywnosc)**
    
-   <img width="349" height="37" alt="Zrzut ekranu 2026-01-12 202746" src="https://github.com/user-attachments/assets/784f74ce-c19d-4b36-b02a-aeb70efd408f" />
+   <img width="349" height="37" alt="Zrzut ekranu 2026-01-12 202746" src="max3.png" />
 
 **funkcje nieliniowe**
 -naturalnie obiekt nie może składać się z funkcji nieliniowych np. trygonometrycznych czy wykładniczych
@@ -80,4 +80,4 @@ Manipulator
 **Układ sprzężenia zwrotnego**
 
 *poniżej przykład schematu blokowego układu z zamkniętym ujemnym sprzężeniem zwrotnym (w tym przypadku w miejscu regulatora można dać PID)*
-<img width="1462" height="368" alt="Zrzut ekranu 2026-01-08 162422" src="https://github.com/user-attachments/assets/f398c476-3b89-46d4-b051-db317c1448de" />
+<img width="1462" height="368" alt="Zrzut ekranu 2026-01-08 162422" src="max4.png" />
