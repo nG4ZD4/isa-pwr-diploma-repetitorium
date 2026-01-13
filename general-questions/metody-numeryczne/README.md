@@ -1,8 +1,7 @@
 # Metody numeryczne — mapa myśli
 **Na samym dole jest notatka o stabilności oraz zbieżności - nie ma tego na mapie myśli**
 
-<img width="1524" height="1142" alt="image" src="https://github.com/user-attachments/assets/7f0737e0-400c-4440-978f-bb253456566c" />
-
+<img width="1524" height="1142" alt="image" src="metody-numeryczne.png" />
 
 ## Po co metody numeryczne?
 Metody numeryczne służą do rozwiązywania problemów matematycznych, dla których:
