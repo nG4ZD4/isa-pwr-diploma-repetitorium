@@ -1,0 +1,17 @@
+# 1. Układ regulacji
+**Układ regulacji** to zbiór elementów mających na celu ustanowić wyjście układu na pożądanej przez nas wartości.
+
+**Przykład:**
+
+*Chcemy by w pomieszczeniu było 29°C, ustawiamy na termostacie a układ regulacji (jakiś) tak grzeje by tą temperaturę w pomieszczeniu utrzymać automatycznie*
+
+## 1.2 Podstawowe algorytmy
+- regulator dwustawny
+- regulator trójstawny
+- regulator PID
+  - anty-windup
+  - ograniczenia górne i dolne
+- regulacja pogodowa
+
+### regulator dwustawny
+
