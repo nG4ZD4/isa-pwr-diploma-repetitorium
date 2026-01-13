@@ -1,8 +1,8 @@
 # 1. Obiekt dynamiczy
 
-**Obiektem dynamicznym** nazywa sie uklad fizyczny, techniczny lub abstrakcyjny, ktorego stan oraz wyjscie w danej chwili czasu zaleza nie tylko od aktualnych wartosci sygnalow wejsciowych, lecz rowniez od ich historii, a takze od stanu poczatkowego ukladu.
+**Obiektem dynamicznym** nazywa się układ fizyczny, techniczny lub abstrakcyjny, którego stan oraz wyjście w danej chwili czasu zależą nie tylko od aktualnych wartości sygnałów wejściowych, lecz również od ich historii, a także od stanu początkowego układu.
 
-Innymi slowy, obiekt dynamiczny posiada *pamiec* – jego zachowanie jest determinowane przez cala przeszlosc sygnalow wejsciowych, a nie tylko przez ich wartosc biezaca.
+Innymi słowy, obiekt dynamiczny posiada *pamięć* – jego zachowanie jest determinowane przez całą przeszłość sygnałów wejściowych, a nie tylko przez ich wartość bieżącą.
 
 **Przykład:**
 
@@ -18,7 +18,6 @@ Obiekt dynamiczny
   - wejście - moc na grzejniku
   - wyjście - temperatura pomieszczenia
 *chwile czasu zajmuje by temperatura grzejnika i pomieszczenia się ustabilizowała*
-
 
 *Poniżej przykładowa (real szit badanie) odpowiedź skokowa obiektu dynamicznego cieplnego*
 <img width="1200" height="500" alt="skok_zoom" src="max1.png" />
