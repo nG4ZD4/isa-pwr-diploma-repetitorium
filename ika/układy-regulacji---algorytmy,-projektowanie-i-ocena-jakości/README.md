@@ -15,3 +15,4 @@
 
 ### regulator dwustawny
 
+<img width="1200" height="500" alt="skok_zoom" src="reg-dwustawny.png" />
