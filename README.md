@@ -19,10 +19,10 @@
 
 ### Komputerowe Systemy Sterowania (IKA)
 
-1. Układy regulacji - algorytmy, projektowanie i ocena jakości
-2. Architektura systemów IoT i ich elementy składowe
-3. Komunikacja, akwizycja i przetwarzanie danych w systemach IoT
-4. Bezprzewodowe i przewodowe protokoły komunikacyjne w przemyśle i automatyce domowej
+1. [Układy regulacji - algorytmy, projektowanie i ocena jakości](ika/układy-regulacji---algorytmy,-projektowanie-i-ocena-jakości)
+2. [Architektura systemów IoT i ich elementy składowe](ika/architektura-systemow-IoT-i-ich-elementy-skladowe)
+3. [Komunikacja, akwizycja i przetwarzanie danych w systemach IoT](ika/komunikacja,-akwizycja-i-przetwarzanie-danych-w-systemach-IoT)
+4. [Bezprzewodowe i przewodowe protokoły komunikacyjne w przemyśle i automatyce domowej](ika/bezprzewodowe-i-przewodowe-protokoły-komunikacyjne-w-przemyśle-i-automatyce-domowej)
 5. BMS – zastosowanie i zadania jakie realizuje w automatyce budynkowej
 6. Systemy rozproszone i centralnie sterowane w automatyce budynkowej. Zalety i wady
    poszczególnych rozwiązań.
