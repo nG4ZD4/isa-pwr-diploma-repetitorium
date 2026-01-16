@@ -1,3 +1,5 @@
+Disclaimer: obeznanie z zagadnieniami z punktów 0, 1 i 2 jest konieczne do przyswojenia następnych. Faktyczne zagadnienie do egzaminu aczkolwiek nie obejmuje stricte prostych struktur danych opisanych w punktach 1 i 2.
+
 ## 0. Wstęp
 
 ### ADT a struktura danych
@@ -17,7 +19,7 @@ Często wykorzystywanymi rzędami, przedstawionymi w kolejności rosnącej, są:
 - O(n^2) - złożoność kwadratowa
 - O(n^3) - sześcian
 - O(2^n) - złożoność wykładnicza
-- O(n!) - silnia
+- O(n!) - silnia+
 
 Wszystkie notacje zostały przedstawione na [rysunku](image-7.png).
 
@@ -220,20 +222,164 @@ Operacja modyfi-key(e,p) w obu podejściach odbywać się będzie w czasie linio
 
 ## 3. Drzewa binarne, kopce
 
-## 4. Tablice z hashowaniem
+**Drzewo** jest zbiorem wierzchołków (węzłów) oraz łączących je krawędzi. Można je podzielić na poziomy, gdzie na zerowym poziomie jest tylko jeden wierzchołek (korzeń drzewa) i ma on połączenia jedynie z wierzchołkami na poziomie pierwszym.
 
-## 5. Drzewa binarne
+Kolejne wierzchołki mają zawsze dokładnie jedno połączenie z jednym z wierzchołków na poziomie poprzednim (jest to jego rodzic) oraz dowolną (0 lub więcej) liczbę połączeń z wierzchołkami na poziomie kolejnym (są to jego dzieci/synowie/potomkowie). Wierzchołki bez dzieci nazywami liścmi.
 
-## 6. Grafy
+Drzewo można zdefiniować też jako graf, który jest nieskierowany, spójny i acykliczny.
 
-## 7. Algorymy wyznaczające najkrótszą i najdłuższą drogę w grafie
+Czy drzewo jest ADT czy strukturą danych? To zależy. Powszechnie jest uważane za strukturę danych, mimo że definicja drzewa nieokreśla sposobu rozmieszczenia danych w pamięci ani złożoności operacji. Aczkolwiek z matematycznego i informatycznego punktu widzenia można na drzewo patrzeć jako na ADT.
 
-## 8. Harmonogramowanie projektó z wykorzystaniem algorytmów grafowych
+#### Typowe operacje na drzewach:
 
-## 9. Zarządzanie pamięcią
+- dodanie elementu
+- usunięcie elementu
+- wyszukanie elementu
+- usunięcie poddrzewa
+- rotacja poddrzewa
+- przeglądnięcie drzewa (odwiedzenie wszystkich wierzchołków w pewnej kolejności)
 
-## 10. Tablice z haszowaniem
+#### Zastosowanie drzew:
 
-## 11. Słowniki
+- modelowanie hierarchii
+- procesy decyzyjne
+- rokład gramatyczny zdań
 
-## 12. XML - uniwersalny język znaczników, wyszukiwanie i przetwarzanie informacji
+#### Rodzaje drzew
+
+- binarne - każdy węzeł ma conajwyżej dwóch potomków
+- binarne zupełne - każdy węzeł, który nie jest liściem ma dokładnie dwóch potomków, a liście mają conajwyżej dwóch potomków, impikuje binarne
+- binarne pełne - każdy węzeł ma dokładnie dwóch potomków, implikuje binarne i binarne zupełne
+
+Wysokość drzewa binarnego zupełnego (pesymistyczna) wynosi zaledwie O(log n), gdzie n to liczba węzłów. Wysokość drzewa binarnego (pesymistyczna) wynosi aż O(n).
+
+#### Rodzaje przejść przez drzewo
+
+- breadth-first (wszerz) - rodzeństwo węzła jest odwiedzane przed jego dziećmi (odpowiada kolejce FIFO)
+- depth-first (wgłąb) - dzieci węzła są odwiedzane przed jego rodzeństwem (odpowiada kolejce LIFO)
+  - pre-order - rodzic odwiedzany przed swoimi dziećmi
+  - post-order - rodzic odwiedzany po swoich dzieciach
+  - in-order - najpierw odwiedzany lewy syn, potem rodzic, potem prawy syn (dotyczy drzew binarnych)
+- best-first (najpierw najlepszy) - odwiedzany wg preiorytetu (odpowiada kolejce priorytetowej)
+
+![alt text](image-10.png)
+
+Kopiec (heap) - drzewo, w którym zachowana jest zasada kopca tzn. klucz rodzica jest w stałej relacji z kluczami jego dzieci, z rozróżnieniem na: - max heap (rodzic niemniejszy od swoich dzieci) - min heap (rodzic niewiększy od swoich dzieci)
+Dzięki temu każda ścieżka od korzenia do liścia jest posortowana (a cały kopiec jest posortowany częściowo). Jeśli węzły nie mają klucza, to kluczem staje się wartość.
+
+Kopce również mogą być binarne, binarne zupełne i binarne pełne.
+
+Kopiec binarny zupełny można zaiplementować za pomocątablicy dynamicznej. Dzieci każdego rodzica o indeksie k mają indeksy 2k+1 oraz 2k+2 - tym samym można wydedukować, że indeks rodzica każdego dziecka o indeksie l to floor((l-1)/2). Jest to wydajna i prosta implementacja, a dzięki temu, że kopiec jest zupełny, to nie ma w tablicy dziur, a znając indeks dostęp do węzła jest w czasie O(1).
+
+![alt text](image-11.png)
+
+#### Operacje kopcowe (dla kopca typu max):
+
+- insert()
+- extract-max() - usunięcie i zwrócenie elementu o największym kluczu
+- find-max() - zwrócenie elementu o największym kluczu
+- find() - szukowanie po kluczu/wartości elementu
+- delete() - usunięcie po wartości elementu
+- decrease-key()/increase-key()
+- build() - zbudowanie kopca z n elementów
+
+Przy dodawaniu i usuwaniu elementów bez wykonania dodatkowych czynności zostałaby utracone własności kopca. Do tego służą operacje pomocnicze
+
+- heapify-up (przy dodawaniu elementu oraz increase-key) - zaczynając od elementu e, sprawdzamy czy element e jest w prawdłowej relacji ze swoim rodzicem (lub jest korzeniem i nie ma rodzica), jeśli nie jest to je zamieniamy; powtarzamy sprawdzenie i zamiane, aż nie będzie potrzeby zamiany
+- heapify-down (przy extract-max oraz decrease-key) - zaczynając od elementu e, sprawdzamy czy element jest w prawidłowej relacji ze swoim dziećmi (lub jest liściem i nie ma dzieci), jeśli nie jest to zamieniami go z większym z dzieci; powtarzamy sprawdzenie i zamiane, aż nie będzie potrzeby zamiany
+
+Dla usuwania elementu po jego wartości używane jest heapify-up lub heapify-down w zależności od potrzeby (lub też żadne z nich). Pesymistyczny czas operacji heapify-up i heapify-down odpowiada wysokości drzewa w związku z czym wynosi O(log n).
+
+Dla insert ważnym jest, że przed wykonaniem heapify-up wstawiamy nowy elementu na pierwsze wolne miejsce (czyli staje się liściem). Dla extract znowuż operacja rozpoczyna się od wstawienia ostatniego elementu w miejsce korzenia (przy zapamiętaniu starego korzenia, aby go zwrócić).
+
+Budowanie kopca (dla kopca binarnego zupełnego) odnosi się do wypełnienia pustej struktury (dodaniu po kolei wielu elementów). Da się to wykonań szybciej niż naiwne podejścia wykonania operacji insert n razy, co dałoby złożoność O(n log n). Należy dodać wszystkie elementy bez zachowywania własności kopca, a następnie wykonać heapify-down dla indeksów z (w przybliżeniu) pierwszej połowy (czyli dla węzłów niebędących liścmi), co skróci czas do O(n).
+
+#### Zastosowanie kopców
+
+- sortowanie przez kopcowanie
+- algorytmy selekcji
+- kolejki priorytetowe
+- algorytmy grafowe (Dijikstry, Prima)
+
+Kopiec Fibbonacciego - realizacja kolejki priorytetowej w formie lasu (wielu drzew) złożonego z kopców, która oferuje lepszą wydajność niż realizacja poprzez kopiec binarny. Dalej opisywane kopce będą typu min.
+
+Stopień (liczba dzieci) każdego węzła w kopcu Fibbonacciego wynosi co najwyżej log n, a dla węzła o stopniu k rozmiar podrzewa (zakorzenionego w nim) wynosi co njamniej F\_(k+2) (k+2 liczba Fibbonacciego). Dla nie-korzenia x możemy odciąć tylko jednego - gdy odcinamy kolejnego, x samo jest odcinane i staje się osobnym drzewem. Drzewa można łączyć podczas innej operacji. Znaczone (marked) węzły to takie, gdzie co najmniej jeden syn został odcięty od czasu gdy rozpatrywany węzeł został czyimś synem. Potencjał kopca jest zależny od liczby zaznaczonych węzłów.
+
+Wszystkie korzenie są ze sobą połączone listą cykliczną dwukierunkową, tak samo każde grupa rodzeństwa.
+
+![alt text](image-13.png)
+
+Do analizy złożoności kopca Fibbonacciego (widocznej na [rysunku](image-12.png)) stosowana jest metoda potencjału (koszt amortyzowany). Kopiec Fibbonacciego poprawia teoretyczną złożoność niektórych algorytmów grafowych (np. Dijikstra i Prima).
+
+![alt text](image-12.png)
+
+Struktura zbiorów rozłącznych (dis-joint data structure) - struktura przechowująca elementy pogrupowane w zbiory tak, że każdy element należy dokładnie do jednego z bioru (rozbicie zbiorów). Każdy zbiór ma reprezentanta.
+
+Struktura zbiorów rozłącznych jest stosowana m.in. w algorytmie Kruskala.
+
+W praktyce używa się implementacji lasu zbiorów rozłącznych (disjoint-set forest) gdzie każdy zbiór reprezentowany jest przez osobne drzewo, a korzeń drzewa jest reprezentantem zbioru. Pojawia się taka operacja jak union(x,y).
+
+Czas zamortyzowany jest bardzo dobry. Implementacja jest zarówno szybka praktycznie jak i optymalna asymptotycznie (gorsza najwyżej o stałą od najlepszej możliwej).
+
+## 4. Słowniki, binarne drzewa poszukiwań, tablice mieszające
+
+Słownik (mapa, tablica asocjacyjna) - ADT przechowujące elementy w postaci pary klucz-wartość, gdzie klucze mogą być dowolnego typu. Słownik mapuje zbiór kluczy na zbiór wartości - jak funkcja matematyczna, w związku z czym część kluczy może nie mieć wartości (funkcja częściowa).
+
+Czy każdy klucz ma jedną wartość? To zależy. Generalnie tak. Istnieje coś takiego jak multimapa, w której może być kilka wartości do jednego klucza.
+
+Operacje na słowniku:
+
+- insert(k,v) - jeśli element o kluczu k już istnieje to jego wartość zostaje nadpisana przez v
+- find(k)/lookup(k)
+- delete(k)/remove(k)
+- exists(k)
+- size()
+- empty()
+- keys()
+- values()
+
+Z definicji ADT słownika nie wynika, że klucze muszą być przechowywane w uporządkowany sposób, aczkolwiek niektóre implementacje tego wymagają. Uporządkowany słownik może być zarówno poprzez posortowanie kluczy (niezależnie od kolejności wstawiania) albo poprzez kolejność wstawiania (niezależnie od kluczy).
+
+Słowniki zakładają szybkie wyszukiwanie elementu po zadanym kluczu. Dla wszelkich implementacji ADT listy złożoności tej operacji wynoszą O(n). Szybsze wyszukiwanie można zapewnić przez zaimplementowanie słownika jako **binarne drzewo poszukiwań** lub **tablicę mieszającą**.
+
+Binarne drzewa poszukiwań (BST) - drzewo binarne, w którym klucz węzła jest większy od klucza lewego syna i mniejszy od klucza prawego syna. Wypisując je metodą in-order otrzymamy elementy posortowane wg klucza (słownik uporządkowany). 
+
+Aby znaleźć minimum lub maksimum w BST należy podążać odpowiednio lewym lub prawym poddrzewem, aż do ostatniego elementu - co zaprezentowane zostało na [rysunku](image-14.png).
+
+![alt text](image-14.png)
+
+Istnieją takie operacje jak successor(w) oraz rotateRight(w) i rotateLeft(w), które zostały zaprezentowane dobrze na rysunkach poniżej. Operacje rotate wykorzystuje się, aby zrównoważyć drzewo (zmniejszyć jego wysokość). Do równoważenia drzew wykorzystuje się algorytm DSW lub samorównoważące się drzewa, takie jak drzewa AVL, drzewa czerwono-czarne oraz B-drzewa.
+
+![alt text](image-15.png)
+![alt text](image-16.png)
+
+Algorytm DSW - algorytm służący do równoważenia drzew. Stosowane jest na kolejnych węzłach rotateRight tyle razy, aby drzewo stało się listą (faza pierwsza). Następnie na co drugim węźle wzdłuż prawej gałęzi drzewa stosowane jest rotateLeft (faza druga). To gwarantuje doskonale zrównoważone drzewo z wysokością należącą do O(log n). Złożoność czasowa algorytmu to O(n), pamięciowa to O(1).
+
+Drzewo AVL - samoroównoważące się drzewo BST, gdzie każdy wierzchiołek przechowuje współczynnik zrównoważenia (różnica wysokości między lewym a prawym poddrzewem). Wartości o wartości bezwględnej =< 0 są w porządku, a dla wartości bezwględnych równych dwa należy naprawić poziom wyważenia węzłów. 
+
+Po dodaniu elementu wartości współczynników muszą być aktualizowane dla każdego węzła od dodanego w górę (maksymalnie do korzenia), z tym, że wyważenie zaktualizowane na 0 kończy proces. Jeśli pojawi się wartość -2 lub 2, to należy przeprowadzić naprawę za pomocą rotacji i operacja się kończy. Czas O(log n).
+
+Usuwanie działa tak samo, z tym że po przeprowadzonej naprawie operacja się nie kończy i należy wykonywać ją dalej.
+
+Drzewo czerwono-czarne - samorównoważące się drzewo BST, gdzie każdy węzeł ma kolor czerwony lub czarny. Spełnione są własności:
+- korzeń jest czarny
+- liście są czarne
+- synowie czerwonego są czarni
+- dla węzła w ściezki od do jego potomków będącymi liścmi mają po tyle samo węzłów czarnych
+
+Dzięki tym własnościom, dla każdego węzła w jego najdłuższa ścieżka do liścia jest co najwyżej 2 razy dłuższa niż najkrótsza.
+
+Podczas dodawania elementu, jest on dodawany jako czerwony węzeł, a następnie - jeśli to konieczne - dokonuje się korektu. Istnieje kilka przypadków możliwych korekt - każda z nich jest w czasie O(1) i występuje co najwyżej jedna rotacja.
+
+Usuwanie jest bardziej skomplikowane (zależnie od koloru usuwanego węzła i liczby jego dzieci), ale przywracanie własności drzewa wymaga zawsze co najwyżej dwóch rotacji.
+
+Co jest lepsze, drzewa AVL czy czerwono-czarne? To zależy.
+- oba zapewniają operacje find, insert i delete w czasie O(log n)
+- avl jest lepiej wyważony i w praktyce find jest szybszy, a czerwono-czarne nie gwarantują doskonałego wyważenia
+- avl ma większy koszt operacji insert i delete (możliwa jest konieczność przywracania własności wzdłuż całego drzewa), podczas gdy koszty naprawy dla insert i delete dla czerwono-czarnych to O(1)
+
+Wybieramy dogodną opcję na podstawie tego jakich operacji spodziewamy się używać częściej.
+
+Tablice mieszające
+
+## 5. Grafy
