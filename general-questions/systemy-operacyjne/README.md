@@ -1,3 +1,5 @@
+<img width="873" height="659" alt="image" src="https://github.com/user-attachments/assets/0ead7100-2737-4afe-ad47-a3dba3662c83" />
+
 ### 1. Przegląd i definicja Systemu Operacyjnego
 
 System operacyjny (SO) to oprogramowanie (program), które zarządza całym systemem komputerowym, obejmując zarówno sprzęt, jak i oprogramowanie. Jego głównym celem jest udostępnianie zasobów komputera oraz jego funkcji użytkownikowi.
