@@ -1,4 +1,6 @@
-# Arcitektura mikrokontrolerów
+# Architektura mikrokontrolerów
+<img width="1014" height="749" alt="image" src="https://github.com/user-attachments/assets/8881e4f8-c639-48b9-a354-a44b8e03030a" />
+
 ## 1. Definicja:
 * **Mikrokontroler:** układ scalony zawierający mikroprocesor oraz wszystkie niezbędne układy peryferyjne, zdolny do autonomicznej pracy. 
 
