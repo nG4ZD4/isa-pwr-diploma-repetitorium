@@ -1,11 +1,20 @@
 # 1. Przewodowe
 
-Protokoły przewodowe charakteryzują się duża przpustowością, niezawodnością, oraz bezpieczeństwem
+**+**
+
+- duża niezawodność
+- odporne na zakłucenia
+- deterministyczne
+
+**-**
+- brak mobilność
+- duży koszt instalacki (przewody)
 
 ### Przemysł:
 
 EtherCAT
 
+- Mtsubishi
 - Ethernet zmodyfikowany (EtherCAT)
 - Prędkość bardzo wysoka
 - czas rzeczywisty
@@ -35,6 +44,7 @@ wariant TCP/IP
 
 **Profibus**
 
+- Siemens
 - Mster/slave
 - Czas rzeczywisty
 - Max 127 sterowników
@@ -43,6 +53,7 @@ wariant TCP/IP
 
 **Profinet**
 
+- Siemens
 - Ethernet przemysłowy
 - prędkość niska
 - Czas rzeczywisty
@@ -74,7 +85,15 @@ wykorzystywany wa automatyce budynkowej jako protokół pomocniczy nie systemowy
 
 # 2. Bezprzewodowe
 
-Protokoły bezprzewodowe mają mniejszą przepustowość są mniej bezpieczne, a jakosć sygnału zależna jest od rodzaju pomieszczenia i przeszkód
+**+**
+- łatwa instalacja (nie trzeba prowadzić kabla)
+- tania rozbudowa
+- jeżeli warunki wsprzyjają (zasilanie) to mobilne
+
+**-**
+- podatne na zakłócenia
+- opóźnienia
+- niestabilność
 
 **Przemysł:**
 
@@ -121,3 +140,12 @@ LoRa WAN
 - Radio sub-GHz
 - Pod sieć KNX
 - Zasięg bardzo niski
+
+# Jak dobrać protokół?
+
+1. czy ważny jest brak utraty niektórych ramek
+2. co przesyłamy
+3. czas reakcji
+4. producent - komponenty (czyli jaki sprzęt już mamy)
+5. pobór energii
+6. koszt
