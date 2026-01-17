@@ -2,15 +2,15 @@
 
 IoT nie ma twardo określonej architektury, przedstawimy sobie kluczowy model cztero-warstwowy
 
-1. **Percepcja** – czujniki, urządzenia
+1. **Urządzeń** – czujniki, aktuatory
 
-2. **Transport** – protokoły i transmisja (MQTT, CoAP, HTTP, LoRa, BLE, Zigbee, WiFi)
+2. **Komunikacji** – protokoły i transmisja (MQTT, CoAP, HTTP, LoRa, BLE, Zigbee, WiFi)
 
-3. **Przetwarzanie** – bazy danych, chmura
+3. **Przetwarzania** – bazy danych, chmura, analiza
 
-4. **Aplikacje** – zarządzanie urządzeniami, bezpieczeństwo, API
+4. **Aplikacji** – zarządzanie urządzeniami, bezpieczeństwo, API, wizualizacja
 
-## Percepcja
+## Warstwa Urządzeń
 
 wszelkie czujniki i aktuatory, do tej warstwy dodać możemy edge computing który czasami zaliczany jest jako osobna warstwa
 
@@ -18,7 +18,7 @@ wszelkie czujniki i aktuatory, do tej warstwy dodać możemy edge computing któ
 Urządzenia końcowe (czyli elementy warstwy percepcji jak np. komputer raspberry) mogą przygotowywać dane w celu zmniejszenia natłoku w sieci itp. Urządzenia końcowe dodatkowo mogą same wykonywać 
 zadania, przykładowo by system bezpieczeństwa wezwał ochronę nie potrzebuje tego robić przez chmurę, być może sam ma kartę sim i dokona telefonu.
 
-## Transport
+## Warstwa Komunikacji
 
 do tej warstwy zaliczamy protokoły i sposoby transmisji danych oraz gate'y, w tej warstwie również może nastąpić edge computing (procesy w gate'cie)
 
@@ -33,7 +33,7 @@ zbiera dane z wielu urządzeń IoT. Co robi gate(brama):
 
 - umożliwia sterowanie urządzeniami w druga stronę
 
-## Przetwarzanie
+## Warstwa przetwarzania
 
 warstwa ta odpowiada za przechowywanie i przetwarzanie dużych ilości danych
 
