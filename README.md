@@ -24,8 +24,8 @@
 3. [Komunikacja, akwizycja i przetwarzanie danych w systemach IoT](ika/komunikacja,-akwizycja-i-przetwarzanie-danych-w-systemach-IoT)
 4. [Bezprzewodowe i przewodowe protokoły komunikacyjne w przemyśle i automatyce domowej](ika/bezprzewodowe-i-przewodowe-protokoły-komunikacyjne-w-przemyśle-i-automatyce-domowej)
 5. [BMS – zastosowanie i zadania jakie realizuje w automatyce budynkowej](ika/BMS-–-zastosowanie-i-zadania-jakie-realizuje-w-automatyce-budynkowej/README.md)
-6. [ika/systemy-rozproszone-i-centralnie-sterowane-w-automatyce-budynkowej--zalety-i-wady-poszczegolnych-rozwiazan](Systemy rozproszone i centralnie sterowane w automatyce budynkowej. Zalety i wady
-   poszczególnych rozwiązań.)
+6. [Systemy rozproszone i centralnie sterowane w automatyce budynkowej. Zalety i wady
+   poszczególnych rozwiązań.](ika/systemy-rozproszone-i-centralnie-sterowane-w-automatyce-budynkowej--zalety-i-wady-poszczegolnych-rozwiazan)
 7. Protokoły transmisji danych w systemach mikroprocesorowych
 8. Analiza porównawcza metod kaskadowych oraz zwinnych w prowadzeniu projektów IT
 9. Podstawowe własności oraz funkcje systemów akwizycji i prezentacji danych oraz systemów DCS
