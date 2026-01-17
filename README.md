@@ -15,7 +15,7 @@
 7. [Architektura mikrokontrolerów](general-questions/architektura-mikrokontrolerow/README.md)
 8. [Systemy operacyjne – przegląd, struktury i zadania](general-questions/systemy-operacyjne/README.md)
 9. [Zasady projektowania algorytmów](general-questions/projektowanie-i-analiza-algorytmow/README.md)
-10. Sieci komputerowe – przegląd, struktury i zastosowania
+10. [Sieci komputerowe – przegląd, struktury i zastosowania](https://github.com/xEdziu/isa-pwr-diploma-repetitorium/tree/main/general-questions/sieci-komputerowe)
 
 ### Komputerowe Systemy Sterowania (IKA)
 
