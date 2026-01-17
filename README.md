@@ -26,10 +26,10 @@
 5. [BMS – zastosowanie i zadania jakie realizuje w automatyce budynkowej](ika/BMS-–-zastosowanie-i-zadania-jakie-realizuje-w-automatyce-budynkowej/README.md)
 6. [Systemy rozproszone i centralnie sterowane w automatyce budynkowej. Zalety i wady
    poszczególnych rozwiązań.](ika/systemy-rozproszone-i-centralnie-sterowane-w-automatyce-budynkowej--zalety-i-wady-poszczegolnych-rozwiazan)
-7. Protokoły transmisji danych w systemach mikroprocesorowych
-8. Analiza porównawcza metod kaskadowych oraz zwinnych w prowadzeniu projektów IT
-9. Podstawowe własności oraz funkcje systemów akwizycji i prezentacji danych oraz systemów DCS
-10. Cykl życia projektu integracji przemysłowych systemów automatyki
+7. [Protokoły transmisji danych w systemach mikroprocesorowych](ika/protokoły-transmisji-danych-w-systemach-mikroprocesorowych/README.md)
+8. [Analiza porównawcza metod kaskadowych oraz zwinnych w prowadzeniu projektów IT](ika/analiza-porownawcza-metod-kaskadowych-oraz-zwinnych-w-prowadzeniu-projektow-IT/README.md)
+9. [Podstawowe własności oraz funkcje systemów akwizycji i prezentacji danych oraz systemów DCS](ika/podstawowe-wlasnosci-oraz-funkcje-systemow-akwizycji-i-prezentacji-danych-oraz-systemow-DCS/README.md)
+10. [Cykl życia projektu integracji przemysłowych systemów automatyki](ika/cykl-zycia-projektu-integracji-przemyslowych-systemow-automatyki/README.md)
 
 ### Inteligentne Systemy Przemysłu 4.0 (IPS)
 
