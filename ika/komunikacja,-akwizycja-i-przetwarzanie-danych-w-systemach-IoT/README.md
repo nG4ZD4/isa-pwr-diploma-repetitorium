@@ -27,8 +27,14 @@ Warstwę fizyczną:
 
 **Akwizycja** to proces zbierania, rejestrowania i przesyłąnia danych
 
-może i trzeba rozpisać całą trogę jaką dane przebywają przez IoT od czujnika do wizualizacji?
-
 # 3. Przetwarzanie danych
 
 Prócz przetwarzania danych w celu efektywnego przetransportowania ich. Niektóre dane mogą służyć do modelowania obiektów w celu wyznaczania trendów, planowania dalszych działań i optymalizacji sterowania
+
+Dane przetwarzena mogą być na dwóch poziomach:
+
+**Edge** (computing): przetwarzanie na urządzeniach konćowych (blisko czujnika), przetwarzanie na gate'cie. Tutaj przetworzone dane pozwalają na sprawniejsze przesyłanie ich dalej, szybszą reakcję i oszczędzanie mocy chmury.
+
+*Przykład: W systemach alarmowych szybciej jest by urządzenie końcowe wykryło i powiadomiło służby zamiast robić to przez chmurę, urządzenie końcowe może także dokonywać kompresji np. obrazów by możliwe zminimalizować obciążenie sieci.*
+
+**Cloud** (computing): Wykorzystujemy do przetwarzania dużej ilości danych. Na chmurze także generujemy raporty, analizy, modele itp.
