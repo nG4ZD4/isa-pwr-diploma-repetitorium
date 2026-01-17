@@ -11,7 +11,6 @@
 
 📐 projektowanie
 
-      
 💻 implementacja
       
 🧪 testy
@@ -34,8 +33,8 @@
 # Metody zwinne (Agile)
 
 - podejście iteracyjne i przyrostowe
-- projekt dzieli się na sprinty
-- każdy sprint dostarcza działający fragment oprogramowania
+- małe etapy
+- wymagania mogą zmieniać sięw trakcie
 
 **Zalety:**
 
@@ -49,6 +48,39 @@
 - wymagają dużego zaangażowania klienta
 - trudne do przewidzenia kosztów i czasu wcześnie
 - moga brakować formalnej dokumentacji
+
+## Metody zwinne przykłady
+
+### SCRUM
+
+- sprinty
+- role: Product Owner, Scrum Master, Zespól Developerski
+
+*sprint - podstawowa jednostka trwająca zwykle 1-4 tygodni*
+
+*Typowy przebieg sprintu:*
+
+*1. Sprint Planning – wybór zadań do realizacji*
+
+*2. Daily Scrum – codzienna krótka odprawa zespołu (15 min)*
+
+*3. Development Work – realizacja zadań*
+
+*4. Sprint Review – prezentacja efektów dla interesariuszy*
+
+*5. Sprint Retrospective – analiza, co można poprawić w kolejnym sprincie*
+
+### KANBAN
+
+- wizualne zarządzanie przepływem pracy
+- tablica kanban (To Do / In Progress / Done)
+- limity WIP (Work In Progress)
+- ciagly przeplyw zadan
+
+### XP (Extreme programming)
+
+- TDD (Test Driven Development) - najpierw piszemy testy, a potem kod
+- Refactoring - poprawa kodu czyli jego struktury, czytelności, utrzymania
 
 # Porównanie
 
