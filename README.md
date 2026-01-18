@@ -41,7 +41,7 @@
 6. [Cechy wspólne i różnice platform programistycznych .Net i Java. Obiektowość w językach Java i C#](ips\.net-java\README.md)
 7. Metody i algorytmy sztucznej inteligencji.
 8. Metody rozwiązywania zadań optymalizacji.
-9. Protokoły transmisji cyfrowej w przemyśle 4.0.
+9. [Protokoły transmisji cyfrowej w przemyśle 4.0.](ips\przemysl-4.0\README.md)
 10. Metody projektowania algorytmów równoległych.
 
 ### Zastosowania Inżynierii Komputerowej (IZI)
