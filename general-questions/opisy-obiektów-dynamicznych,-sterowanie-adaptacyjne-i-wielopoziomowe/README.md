@@ -1,3 +1,5 @@
+<img width="961" height="706" alt="image" src="https://github.com/user-attachments/assets/5c27e7f6-2911-46b3-9f68-23fd4447f352" />
+
 # 1. Obiekt dynamiczy
 
 **Obiektem dynamicznym** nazywa się układ fizyczny, techniczny lub abstrakcyjny, którego stan oraz wyjście w danej chwili czasu zależą nie tylko od aktualnych wartości sygnałów wejściowych, lecz również od ich historii, a także od stanu początkowego układu.
@@ -21,6 +23,17 @@ Obiekt dynamiczny
 
 *Poniżej przykładowa (real szit badanie) odpowiedź skokowa obiektu dynamicznego cieplnego*
 <img width="1200" height="500" alt="skok_zoom" src="max1.png" />
+
+Opisy obiektów dynamicznych:
+- równania różniczkowe
+  - gdy wyprowadzamy model z praw fizyki
+  - dobra interpretacja wielkości fizycznych
+- Transmitancja
+  - dla układów liniowych i stacjonarnych
+  - prosta analiza dynamiki, stabilności a nawet odpowiedzi częstotliwościowych
+- Zmienne stanu
+  - dobry dla wielowymiarowych układów
+  - naturalny dla układów nieliniowych
 
 ## 1.1 Klasyfikacja obiektów dynamicznych
 

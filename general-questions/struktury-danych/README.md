@@ -1,3 +1,5 @@
+<img width="1352" height="983" alt="image" src="https://github.com/user-attachments/assets/19581345-c9f7-42fc-ac35-ff75865dddf5" />
+
 Disclaimer: obeznanie z zagadnieniami z punktów 0, 1 i 2 jest konieczne do przyswojenia następnych. Faktyczne zagadnienie do egzaminu aczkolwiek nie obejmuje stricte prostych struktur danych opisanych w punktach 1 i 2.
 
 ## 0. Wstęp

@@ -15,7 +15,7 @@
 7. [Architektura mikrokontrolerów](general-questions/architektura-mikrokontrolerow/README.md)
 8. [Systemy operacyjne – przegląd, struktury i zadania](general-questions/systemy-operacyjne/README.md)
 9. [Zasady projektowania algorytmów](general-questions/projektowanie-i-analiza-algorytmow/README.md)
-10. Sieci komputerowe – przegląd, struktury i zastosowania
+10. [Sieci komputerowe – przegląd, struktury i zastosowania](https://github.com/xEdziu/isa-pwr-diploma-repetitorium/tree/main/general-questions/sieci-komputerowe)
 
 ### Komputerowe Systemy Sterowania (IKA)
 
@@ -24,12 +24,12 @@
 3. [Komunikacja, akwizycja i przetwarzanie danych w systemach IoT](ika/komunikacja,-akwizycja-i-przetwarzanie-danych-w-systemach-IoT)
 4. [Bezprzewodowe i przewodowe protokoły komunikacyjne w przemyśle i automatyce domowej](ika/bezprzewodowe-i-przewodowe-protokoły-komunikacyjne-w-przemyśle-i-automatyce-domowej)
 5. [BMS – zastosowanie i zadania jakie realizuje w automatyce budynkowej](ika/BMS-–-zastosowanie-i-zadania-jakie-realizuje-w-automatyce-budynkowej/README.md)
-6. Systemy rozproszone i centralnie sterowane w automatyce budynkowej. Zalety i wady
-   poszczególnych rozwiązań.
-7. Protokoły transmisji danych w systemach mikroprocesorowych
-8. Analiza porównawcza metod kaskadowych oraz zwinnych w prowadzeniu projektów IT
-9. Podstawowe własności oraz funkcje systemów akwizycji i prezentacji danych oraz systemów DCS
-10. Cykl życia projektu integracji przemysłowych systemów automatyki
+6. [Systemy rozproszone i centralnie sterowane w automatyce budynkowej. Zalety i wady
+   poszczególnych rozwiązań.](ika/systemy-rozproszone-i-centralnie-sterowane-w-automatyce-budynkowej--zalety-i-wady-poszczegolnych-rozwiazan)
+7. [Protokoły transmisji danych w systemach mikroprocesorowych](ika/protokoły-transmisji-danych-w-systemach-mikroprocesorowych/README.md)
+8. [Analiza porównawcza metod kaskadowych oraz zwinnych w prowadzeniu projektów IT](ika/analiza-porownawcza-metod-kaskadowych-oraz-zwinnych-w-prowadzeniu-projektow-IT/README.md)
+9. [Podstawowe własności oraz funkcje systemów akwizycji i prezentacji danych oraz systemów DCS](ika/podstawowe-wlasnosci-oraz-funkcje-systemow-akwizycji-i-prezentacji-danych-oraz-systemow-DCS/README.md)
+10. [Cykl życia projektu integracji przemysłowych systemów automatyki](ika/cykl-zycia-projektu-integracji-przemyslowych-systemow-automatyki/README.md)
 
 ### Inteligentne Systemy Przemysłu 4.0 (IPS)
 
@@ -38,10 +38,10 @@
 3. Zastosowania i cechy systemów wbudowanych.
 4. Nowoczesne platformy mobilne.
 5. Narzędzia i techniki programowania oraz udostępniania aplikacji mobilnych.
-6. Cechy wspólne i różnice platform programistycznych .Net i Java. Obiektowość w językach Java i C#.
+6. [Cechy wspólne i różnice platform programistycznych .Net i Java. Obiektowość w językach Java i C#](ips/dotnet-java/README.md)
 7. Metody i algorytmy sztucznej inteligencji.
 8. Metody rozwiązywania zadań optymalizacji.
-9. Protokoły transmisji cyfrowej w przemyśle 4.0.
+9. [Protokoły transmisji cyfrowej w przemyśle 4.0.](ips/przemysl-4.0/README.md)
 10. Metody projektowania algorytmów równoległych.
 
 ### Zastosowania Inżynierii Komputerowej (IZI)
