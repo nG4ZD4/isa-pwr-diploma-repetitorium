@@ -24,6 +24,17 @@ Obiekt dynamiczny
 *Poniżej przykładowa (real szit badanie) odpowiedź skokowa obiektu dynamicznego cieplnego*
 <img width="1200" height="500" alt="skok_zoom" src="max1.png" />
 
+Opisy obiektów dynamicznych:
+- równania różniczkowe
+  - gdy wyprowadzamy model z praw fizyki
+  - dobra interpretacja wielkości fizycznych
+- Transmitancja
+  - dla układów liniowych i stacjonarnych
+  - prosta analiza dynamiki, stabilności a nawet odpowiedzi częstotliwościowych
+- Zmienne stanu
+  - dobry dla wielowymiarowych układów
+  - naturalny dla układów nieliniowych
+
 ## 1.1 Klasyfikacja obiektów dynamicznych
 
 - Liniowe - Nieliniowe
