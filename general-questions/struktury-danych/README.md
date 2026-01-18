@@ -19,7 +19,7 @@ Często wykorzystywanymi rzędami, przedstawionymi w kolejności rosnącej, są:
 - O(n^2) - złożoność kwadratowa
 - O(n^3) - sześcian
 - O(2^n) - złożoność wykładnicza
-- O(n!) - silnia+
+- O(n!) - silnia
 
 Wszystkie notacje zostały przedstawione na [rysunku](image-7.png).
 
@@ -143,7 +143,7 @@ Wśród nich znajdują się:
 
 ## 2. Stosy, kolejki, kolejki cykliczne, kolejki priorytetowe
 
-Kolejka - ADT, w którym dodawanie i usuwanie elementów jest ze sobą powiązane tj. usuwany element, jest określony przez cechy elementó dodanych do tej pory (np. przez ich kolejność, priorytet).
+Kolejka - ADT, w którym dodawanie i usuwanie elementów jest ze sobą powiązane tj. usuwany element, jest określony przez cechy elementów dodanych do tej pory (np. przez ich kolejność, priorytet).
 
 Typowe operacje na kolejkach:
 
@@ -269,7 +269,7 @@ Dzięki temu każda ścieżka od korzenia do liścia jest posortowana (a cały k
 
 Kopce również mogą być binarne, binarne zupełne i binarne pełne.
 
-Kopiec binarny zupełny można zaiplementować za pomocątablicy dynamicznej. Dzieci każdego rodzica o indeksie k mają indeksy 2k+1 oraz 2k+2 - tym samym można wydedukować, że indeks rodzica każdego dziecka o indeksie l to floor((l-1)/2). Jest to wydajna i prosta implementacja, a dzięki temu, że kopiec jest zupełny, to nie ma w tablicy dziur, a znając indeks dostęp do węzła jest w czasie O(1).
+Kopiec binarny zupełny można zaiplementować za pomocą tablicy dynamicznej. Dzieci każdego rodzica o indeksie k mają indeksy 2k+1 oraz 2k+2 - tym samym można wydedukować, że indeks rodzica każdego dziecka o indeksie l to floor((l-1)/2). Jest to wydajna i prosta implementacja, a dzięki temu, że kopiec jest zupełny, to nie ma w tablicy dziur, a znając indeks dostęp do węzła jest w czasie O(1).
 
 ![alt text](image-11.png)
 
@@ -342,7 +342,7 @@ Z definicji ADT słownika nie wynika, że klucze muszą być przechowywane w upo
 
 Słowniki zakładają szybkie wyszukiwanie elementu po zadanym kluczu. Dla wszelkich implementacji ADT listy złożoności tej operacji wynoszą O(n). Szybsze wyszukiwanie można zapewnić przez zaimplementowanie słownika jako **binarne drzewo poszukiwań** lub **tablicę mieszającą**.
 
-Binarne drzewa poszukiwań (BST) - drzewo binarne, w którym klucz węzła jest większy od klucza lewego syna i mniejszy od klucza prawego syna. Wypisując je metodą in-order otrzymamy elementy posortowane wg klucza (słownik uporządkowany). 
+Binarne drzewa poszukiwań (BST) - drzewo binarne, w którym klucz węzła jest większy od klucza lewego syna i mniejszy od klucza prawego syna. Wypisując je metodą in-order otrzymamy elementy posortowane wg klucza (słownik uporządkowany).
 
 Aby znaleźć minimum lub maksimum w BST należy podążać odpowiednio lewym lub prawym poddrzewem, aż do ostatniego elementu - co zaprezentowane zostało na [rysunku](image-14.png).
 
@@ -355,13 +355,14 @@ Istnieją takie operacje jak successor(w) oraz rotateRight(w) i rotateLeft(w), k
 
 Algorytm DSW - algorytm służący do równoważenia drzew. Stosowane jest na kolejnych węzłach rotateRight tyle razy, aby drzewo stało się listą (faza pierwsza). Następnie na co drugim węźle wzdłuż prawej gałęzi drzewa stosowane jest rotateLeft (faza druga). To gwarantuje doskonale zrównoważone drzewo z wysokością należącą do O(log n). Złożoność czasowa algorytmu to O(n), pamięciowa to O(1).
 
-Drzewo AVL - samoroównoważące się drzewo BST, gdzie każdy wierzchiołek przechowuje współczynnik zrównoważenia (różnica wysokości między lewym a prawym poddrzewem). Wartości o wartości bezwględnej =< 0 są w porządku, a dla wartości bezwględnych równych dwa należy naprawić poziom wyważenia węzłów. 
+Drzewo AVL - samoroównoważące się drzewo BST, gdzie każdy wierzchołek przechowuje współczynnik zrównoważenia (różnica wysokości między lewym a prawym poddrzewem). Wartości o wartości bezwględnej =< 0 są w porządku, a dla wartości bezwględnych równych dwa należy naprawić poziom wyważenia węzłów.
 
 Po dodaniu elementu wartości współczynników muszą być aktualizowane dla każdego węzła od dodanego w górę (maksymalnie do korzenia), z tym, że wyważenie zaktualizowane na 0 kończy proces. Jeśli pojawi się wartość -2 lub 2, to należy przeprowadzić naprawę za pomocą rotacji i operacja się kończy. Czas O(log n).
 
 Usuwanie działa tak samo, z tym że po przeprowadzonej naprawie operacja się nie kończy i należy wykonywać ją dalej.
 
 Drzewo czerwono-czarne - samorównoważące się drzewo BST, gdzie każdy węzeł ma kolor czerwony lub czarny. Spełnione są własności:
+
 - korzeń jest czarny
 - liście są czarne
 - synowie czerwonego są czarni
@@ -374,6 +375,7 @@ Podczas dodawania elementu, jest on dodawany jako czerwony węzeł, a następnie
 Usuwanie jest bardziej skomplikowane (zależnie od koloru usuwanego węzła i liczby jego dzieci), ale przywracanie własności drzewa wymaga zawsze co najwyżej dwóch rotacji.
 
 Co jest lepsze, drzewa AVL czy czerwono-czarne? To zależy.
+
 - oba zapewniają operacje find, insert i delete w czasie O(log n)
 - avl jest lepiej wyważony i w praktyce find jest szybszy, a czerwono-czarne nie gwarantują doskonałego wyważenia
 - avl ma większy koszt operacji insert i delete (możliwa jest konieczność przywracania własności wzdłuż całego drzewa), podczas gdy koszty naprawy dla insert i delete dla czerwono-czarnych to O(1)
