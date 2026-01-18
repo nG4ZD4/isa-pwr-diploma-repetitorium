@@ -38,7 +38,7 @@
 3. Zastosowania i cechy systemów wbudowanych.
 4. Nowoczesne platformy mobilne.
 5. Narzędzia i techniki programowania oraz udostępniania aplikacji mobilnych.
-6. [Cechy wspólne i różnice platform programistycznych .Net i Java. Obiektowość w językach Java i C#](ips\.net-java\README.md)
+6. [Cechy wspólne i różnice platform programistycznych .Net i Java. Obiektowość w językach Java i C#](ips\dotnet-java\README.md)
 7. Metody i algorytmy sztucznej inteligencji.
 8. Metody rozwiązywania zadań optymalizacji.
 9. [Protokoły transmisji cyfrowej w przemyśle 4.0.](ips\przemysl-4.0\README.md)
